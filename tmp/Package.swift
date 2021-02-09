@@ -26,12 +26,12 @@ let package = Package(
             name: "Template_CLI",
             dependencies: [
               .product(name: "ArgumentParser", package: "swift-argument-parser"), 
-              "Template_CLIICore"]
-        .target(name: "Template_CLIICore",
+              "Template_CLICore"]
+        ),
+        .target(name: "Template_CLICore",
                 dependencies: []),
         .testTarget(
-            name: "Template_CLIITests",
+            name: "Template_CLITests",
             dependencies: ["Template_CLICore"]),
-
     ]
 )
