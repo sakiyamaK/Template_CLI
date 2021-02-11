@@ -12,7 +12,7 @@ struct RuntimeError: Error, CustomStringConvertible {
 
 struct Template_CLI: ParsableCommand {
   static var configuration = CommandConfiguration(
-    commandName: "Template_CLI",
+    commandName: "template_CLI",
     abstract: "",
     discussion: """
         
@@ -24,7 +24,7 @@ struct Template_CLI: ParsableCommand {
 
   func run() throws {
     print("Hello World")
-    dispatchMain()
+    // dispatchMain()
   }
 }
 
